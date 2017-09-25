@@ -1,8 +1,7 @@
 #include "pointmass.h"
 #include "GL/gl.h"
 #include "glbasicshapes.h"
-#include "QDebug"
-#include "constraint.h"
+#include "Constraints/constraint.h"
 
 PointMass::PointMass(float mass, QVector3D pos)
 {

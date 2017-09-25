@@ -16,29 +16,25 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     glwidget.cpp \
     glcamera.cpp \
-    globject.cpp \
-    glpointmarker.cpp \
     glbasicshapes.cpp \
     pointmass.cpp \
-    linearspring.cpp \
-    constantforcefield.cpp \
-    constraintfixedpos.cpp \
-    constraintorbit.cpp \
-    angularspring.cpp
+    ForceAppliers/linearspring.cpp \
+    ForceAppliers/constantforcefield.cpp \
+    ForceAppliers/angularspring.cpp \
+    Constraints/constraintfixedpos.cpp \
+    Constraints/constraintorbit.cpp
 
 HEADERS  += mainwindow.h \
     glwidget.h \
     glcamera.h \
-    globject.h \
-    glpointmarker.h \
     glbasicshapes.h \
     pointmass.h \
-    linearspring.h \
-    forceapplier.h \
-    constantforcefield.h \
-    constraint.h \
-    constraintfixedpos.h \
-    constraintorbit.h \
-    angularspring.h
+    ForceAppliers/forceapplier.h \
+    ForceAppliers/linearspring.h \
+    ForceAppliers/angularspring.h \
+    ForceAppliers/constantforcefield.h \
+    Constraints/constraint.h \
+    Constraints/constraintfixedpos.h \
+    Constraints/constraintorbit.h
 
 FORMS    += mainwindow.ui

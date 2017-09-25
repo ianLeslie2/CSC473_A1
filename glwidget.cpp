@@ -4,10 +4,10 @@
 #include <QDebug>
 #include <QKeyEvent>
 #include <glbasicshapes.h>
-#include "constantforcefield.h"
-#include "constraintfixedpos.h"
-#include "constraintorbit.h"
-#include "angularspring.h"
+#include "ForceAppliers/constantforcefield.h"
+#include "ForceAppliers/angularspring.h"
+#include "Constraints/constraintfixedpos.h"
+#include "Constraints/constraintorbit.h"
 
 GLWidget::GLWidget(QWidget *parent) :
     QGLWidget(parent)
