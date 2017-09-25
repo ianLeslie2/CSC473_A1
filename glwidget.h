@@ -6,7 +6,7 @@
 #include <QList>
 #include <QTimer>
 #include "pointmass.h"
-#include "ForceAppliers/linearspring.h"
+#include "ForceAppliers/forceapplier.h"
 #include "glcamera.h"
 
 class GLWidget : public QGLWidget

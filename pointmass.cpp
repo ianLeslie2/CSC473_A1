@@ -1,6 +1,6 @@
 #include "pointmass.h"
 #include "GL/gl.h"
-#include "glbasicshapes.h"
+#include "glutility.h"
 #include "Constraints/constraint.h"
 
 PointMass::PointMass(float mass, QVector3D pos)
@@ -85,7 +85,7 @@ void PointMass::draw(bool showMain, bool showVel, bool showAcel)
 
     if(showMain){
         glColor3f(r,g,b);
-        GLBasicShapes::renderBox(0.1);
+        GLUtility::renderBox(0.1);
     }
 
     if(showVel || showAcel){
@@ -96,12 +96,12 @@ void PointMass::draw(bool showMain, bool showVel, bool showAcel)
         if (showVel){
             glColor3f(0,0,1);
             glVertex3f(0,0,0);
-            GLBasicShapes::qVertexWrap(&vel);
+            GLUtility::qVertexWrap(&vel);
         }
         if (showAcel){
             glColor3f(1,0,0);
             glVertex3f(0,0,0);
-            GLBasicShapes::qVertexWrap(&acel);
+            GLUtility::qVertexWrap(&acel);
         }
         glEnd();
         glEnable(GL_LIGHTING);

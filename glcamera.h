@@ -5,7 +5,7 @@
 class glcamera
 {
 public:
-    glcamera();
+    glcamera(){}
     glcamera(float yaw,
              float pitch,
              float dist,
@@ -18,12 +18,10 @@ public:
     float pitch;
     float pitchRange;
 
-    void clampValues();
     void applyModelTransform();
 
 private:
-
-
+    void clampValues();
 
 };
 

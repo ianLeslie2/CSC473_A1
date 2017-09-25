@@ -3,8 +3,9 @@
 #include <QEvent>
 #include <QDebug>
 #include <QKeyEvent>
-#include <glbasicshapes.h>
+#include <glutility.h>
 #include "ForceAppliers/constantforcefield.h"
+#include "ForceAppliers/linearspring.h"
 #include "ForceAppliers/angularspring.h"
 #include "Constraints/constraintfixedpos.h"
 #include "Constraints/constraintorbit.h"

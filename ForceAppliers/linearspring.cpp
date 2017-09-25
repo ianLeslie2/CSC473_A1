@@ -1,6 +1,6 @@
 #include "linearspring.h"
 #include "GL/gl.h"
-#include "glbasicshapes.h"
+#include "glutility.h"
 #include "QDebug"
 
 LinearSpring::LinearSpring(float k, float damper, float relaxedDist, PointMass *obj1, PointMass *obj2)
@@ -29,7 +29,7 @@ void LinearSpring::draw()
 {
     glBegin(GL_LINES);
     glColor3f(0,0,0);
-    GLBasicShapes::qVertexWrap(&obj1->pos);
-    GLBasicShapes::qVertexWrap(&obj2->pos);
+    GLUtility::qVertexWrap(&obj1->pos);
+    GLUtility::qVertexWrap(&obj2->pos);
     glEnd();
 }

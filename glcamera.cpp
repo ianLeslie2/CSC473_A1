@@ -2,8 +2,6 @@
 #include <QtMath>
 #include <GL/gl.h>
 
-glcamera::glcamera(){}
-
 glcamera::glcamera(float yaw,
                    float pitch,
                    float dist,

@@ -1,14 +1,12 @@
-#ifndef GLBASICSHAPES_H
-#define GLBASICSHAPES_H
+#ifndef GLUTILITY_H
+#define GLUTILITY_H
 #include <QVector3D>
 
-class GLBasicShapes
+class GLUtility
 {
 public:
-    GLBasicShapes();
     static void renderBox(float scale);
     static void renderTetrahedron(float scale);
-    static void renderPointMarker(float scale);
 
     static void setNormalFromTriangle(QVector3D* v0,
                                       QVector3D* v1,
@@ -18,4 +16,4 @@ public:
     static void qNormalWrap(QVector3D* vect);
 };
 
-#endif // GLBASICSHAPES_H
+#endif // GLUTILITY_H

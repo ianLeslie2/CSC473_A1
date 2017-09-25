@@ -1,7 +1,7 @@
 #include "angularspring.h"
 #include <QtMath>
 #include <GL/gl.h>
-#include "glbasicshapes.h"
+#include "glutility.h"
 
 AngularSpring::AngularSpring(float k,
                              float damper,
@@ -45,11 +45,11 @@ void AngularSpring::draw()
 {
     glBegin(GL_LINES);
     glColor3f(0,0,0);
-    GLBasicShapes::qVertexWrap(&orbitCenter);
-    GLBasicShapes::qVertexWrap(&obj->pos);
+    GLUtility::qVertexWrap(&orbitCenter);
+    GLUtility::qVertexWrap(&obj->pos);
 
-    GLBasicShapes::qVertexWrap(&orbitCenter);
+    GLUtility::qVertexWrap(&orbitCenter);
     QVector3D temp = orbitCenter + restAxisUV;
-    GLBasicShapes::qVertexWrap(&temp);
+    GLUtility::qVertexWrap(&temp);
     glEnd();
 }
